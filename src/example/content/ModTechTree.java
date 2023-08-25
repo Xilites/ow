@@ -2,6 +2,7 @@ package example.content;
 
 import mindustry.content.Items;
 import mindustry.content.Planets;
+import mindustry.ctype.UnlockableContent;
 
 import static mindustry.content.TechTree.node;
 import static mindustry.content.TechTree.nodeRoot;

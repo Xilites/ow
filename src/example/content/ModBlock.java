@@ -11,15 +11,16 @@ import mindustry.world.blocks.production.GenericCrafter;
 import mindustry.world.blocks.production.HeatCrafter;
 import mindustry.world.draw.*;
 
+import static mindustry.content.Blocks.siliconArcFurnace;
 import static mindustry.type.ItemStack.with;
 
 public class ModBlock {
     public static Block CollapseMachine;
     public static Block SubstanceConveyor;
     public static void load(){
-        CollapseMachine = new HeatCrafter("坍缩机"){
+        CollapseMachine = new GenericCrafter("CollapseMachine"){
             {
-                requirements(Category.crafting,with(Items.carbide,10));
+                requirements(Category.crafting,with(Items.carbide,1));
                 craftEffect = Fx.none;
                 outputItem = new ItemStack(ModItem.BlackHole,1);
                 craftTime = 60f * 3f;
@@ -28,9 +29,10 @@ public class ModBlock {
                 hasPower = true;
                 consumePower(5f);
                 consumeItem(Items.carbide,32);
+
             }
         };
-        SubstanceConveyor = new LaunchPad("物质传送机"){
+        SubstanceConveyor = new LaunchPad("SubstanceConveyor"){
             {
                 size = 4;
                 itemCapacity = 5;
