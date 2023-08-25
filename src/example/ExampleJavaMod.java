@@ -2,11 +2,9 @@ package example;
 
 import arc.*;
 import arc.util.*;
-import example.content.ModBlock;
+import example.content.blocks.ModBlock;
 import example.content.ModItem;
 import example.content.ModTechTree;
-import mindustry.*;
-import mindustry.content.*;
 import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;

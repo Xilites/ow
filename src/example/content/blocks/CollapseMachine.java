@@ -1,5 +1,6 @@
-package example.content;
+package example.content.blocks;
 
+import example.content.ModItem;
 import mindustry.content.Fx;
 import mindustry.content.Items;
 import mindustry.graphics.MultiPacker;
@@ -16,9 +17,8 @@ import mindustry.world.meta.BuildVisibility;
 import static mindustry.content.Blocks.siliconArcFurnace;
 import static mindustry.type.ItemStack.with;
 
-public class ModBlock {
+public class CollapseMachine {
     public static Block CollapseMachine;
-    public static Block SubstanceConveyor;
     public static void load(){
         CollapseMachine = new GenericCrafter("CollapseMachine"){
             {
@@ -32,19 +32,6 @@ public class ModBlock {
                 hasItems = true;
                 consumePower(5f);
                 consumeItem(Items.carbide,32);
-            }
-        };
-        MultiPacker SubstanceConveyorIcon = new MultiPacker();
-        SubstanceConveyorIcon.get("ow-SubstanceConveyor.png");
-        SubstanceConveyor = new LaunchPad("SubstanceConveyor"){
-            {
-                requirements(Category.effect,BuildVisibility.campaignOnly,with(Items.carbide,1));
-                size = 4;
-                itemCapacity = 5;
-                hasPower = true;
-                launchTime = 60f * 2;
-                consumePower(5f);
-                createIcons(SubstanceConveyorIcon);
             }
         };
     }
