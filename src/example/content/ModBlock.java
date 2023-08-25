@@ -6,6 +6,7 @@ import mindustry.type.Category;
 import mindustry.type.Item;
 import mindustry.type.ItemStack;
 import mindustry.world.Block;
+import mindustry.world.blocks.campaign.LaunchPad;
 import mindustry.world.blocks.production.GenericCrafter;
 import mindustry.world.blocks.production.HeatCrafter;
 import mindustry.world.draw.*;
@@ -14,6 +15,7 @@ import static mindustry.type.ItemStack.with;
 
 public class ModBlock {
     public static Block CollapseMachine;
+    public static Block SubstanceConveyor;
     public static void load(){
         CollapseMachine = new HeatCrafter("坍缩机"){
             {
@@ -26,6 +28,15 @@ public class ModBlock {
                 hasPower = true;
                 consumePower(5f);
                 consumeItem(Items.carbide,32);
+            }
+        };
+        SubstanceConveyor = new LaunchPad("物质传送机"){
+            {
+                size = 4;
+                itemCapacity = 5;
+                hasPower = true;
+                consumePower(5f);
+                consumeItem(ModItem.BlackHole,1);
             }
         };
     }

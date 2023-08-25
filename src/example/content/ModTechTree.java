@@ -10,9 +10,13 @@ public class ModTechTree {
     public static void load(){
         Planets.erekir.techTree = nodeRoot("OldWorld",ModBlock.CollapseMachine,() -> {
             node(ModItem.BlackHole);
+            node(ModBlock.SubstanceConveyor);
         });
         if (Items.carbide.unlocked()){
             ModBlock.CollapseMachine.onUnlock();
+        }
+        if (ModBlock.CollapseMachine.unlocked()){
+            ModBlock.SubstanceConveyor.onUnlock();
         }
     }
 }
