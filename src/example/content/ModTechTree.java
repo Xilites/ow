@@ -7,7 +7,7 @@ import static mindustry.content.TechTree.nodeRoot;
 
 public class ModTechTree {
     public static void load(){
-        Planets.erekir.techTree = nodeRoot("坍缩机",ModBlock.CollapseMachine,() -> {
+        Planets.erekir.techTree = nodeRoot("OldWorld",ModBlock.CollapseMachine,() -> {
             node(ModItem.BlackHole);
         });
     }

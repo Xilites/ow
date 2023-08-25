@@ -17,7 +17,7 @@ public class ModBlock {
     public static void load(){
         CollapseMachine = new HeatCrafter("坍缩机"){
             {
-                requirements(Category.crafting,with(Items.carbide,100));
+                requirements(Category.crafting,with(Items.carbide,10));
                 craftEffect = Fx.none;
                 outputItem = new ItemStack(ModItem.BlackHole,1);
                 craftTime = 60f * 3f;
@@ -25,6 +25,7 @@ public class ModBlock {
                 itemCapacity = 120;
                 hasPower = true;
                 consumePower(5f);
+                consumeItem(Items.carbide,320);
             }
         };
     }
