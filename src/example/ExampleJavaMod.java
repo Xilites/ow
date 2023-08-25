@@ -2,9 +2,8 @@ package example;
 
 import arc.*;
 import arc.util.*;
-import example.content.blocks.CollapseMachine;
-import example.content.blocks.ModBlock;
 import example.content.ModItem;
+import example.content.blocks.CollapseMachine;
 import example.content.ModTechTree;
 import example.content.blocks.SubstanceConveyor;
 import mindustry.game.EventType.*;
@@ -35,6 +34,7 @@ public class ExampleJavaMod extends Mod{
         Log.info("Loading some example example.content.");
         CollapseMachine.load();
         SubstanceConveyor.load();
+        ModItem.load();
         ModTechTree.load();
     }
 
