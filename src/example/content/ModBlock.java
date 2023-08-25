@@ -10,6 +10,7 @@ import mindustry.world.blocks.campaign.LaunchPad;
 import mindustry.world.blocks.production.GenericCrafter;
 import mindustry.world.blocks.production.HeatCrafter;
 import mindustry.world.draw.*;
+import mindustry.world.meta.BuildVisibility;
 
 import static mindustry.content.Blocks.siliconArcFurnace;
 import static mindustry.type.ItemStack.with;
@@ -34,6 +35,7 @@ public class ModBlock {
         };
         SubstanceConveyor = new LaunchPad("SubstanceConveyor"){
             {
+                requirements(Category.effect,BuildVisibility.campaignOnly,with(Items.carbide,1));
                 size = 4;
                 itemCapacity = 5;
                 hasPower = true;
