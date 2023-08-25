@@ -27,9 +27,9 @@ public class ModBlock {
                 size = 4;
                 itemCapacity = 120;
                 hasPower = true;
+                hasItems = true;
                 consumePower(5f);
                 consumeItem(Items.carbide,32);
-
             }
         };
         SubstanceConveyor = new LaunchPad("SubstanceConveyor"){
@@ -37,8 +37,8 @@ public class ModBlock {
                 size = 4;
                 itemCapacity = 5;
                 hasPower = true;
+                launchTime = 60f * 2;
                 consumePower(5f);
-                consumeItem(ModItem.BlackHole,1);
             }
         };
     }
