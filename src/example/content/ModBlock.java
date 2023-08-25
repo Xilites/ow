@@ -2,6 +2,7 @@ package example.content;
 
 import mindustry.content.Fx;
 import mindustry.content.Items;
+import mindustry.graphics.MultiPacker;
 import mindustry.type.Category;
 import mindustry.type.Item;
 import mindustry.type.ItemStack;
@@ -33,6 +34,8 @@ public class ModBlock {
                 consumeItem(Items.carbide,32);
             }
         };
+        MultiPacker SubstanceConveyorIcon = new MultiPacker();
+        SubstanceConveyorIcon.get("ow-SubstanceConveyor.png");
         SubstanceConveyor = new LaunchPad("SubstanceConveyor"){
             {
                 requirements(Category.effect,BuildVisibility.campaignOnly,with(Items.carbide,1));
@@ -41,6 +44,7 @@ public class ModBlock {
                 hasPower = true;
                 launchTime = 60f * 2;
                 consumePower(5f);
+                createIcons(SubstanceConveyorIcon);
             }
         };
     }
