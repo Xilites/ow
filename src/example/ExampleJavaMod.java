@@ -32,9 +32,10 @@ public class ExampleJavaMod extends Mod{
     @Override
     public void loadContent(){
         Log.info("Loading some example example.content.");
+        ModItem.load();
         CollapseMachine.load();
         SubstanceConveyor.load();
-        ModItem.load();
+
         ModTechTree.load();
     }
 
