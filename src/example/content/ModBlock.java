@@ -25,7 +25,7 @@ public class ModBlock {
                 itemCapacity = 120;
                 hasPower = true;
                 consumePower(5f);
-                consumeItem(Items.carbide,320);
+                consumeItem(Items.carbide,32);
             }
         };
     }
