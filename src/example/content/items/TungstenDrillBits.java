@@ -9,7 +9,7 @@ public class TungstenDrillBits {
             {
                 hardness = 2;
                 if (Tungsten.Tungsten.unlocked()){
-                    this.unlock();
+                    unlock();
                 }
             }
         };

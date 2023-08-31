@@ -9,7 +9,7 @@ public class TungstenBlades {
             {
                 hardness = 2;
                 if (Tungsten.Tungsten.unlocked()){
-                    TungstenBlades.unlock();
+                    unlock();
                 }
             }
         };
