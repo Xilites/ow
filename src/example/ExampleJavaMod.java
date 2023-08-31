@@ -2,7 +2,7 @@ package example;
 
 import arc.*;
 import arc.util.*;
-import example.content.ModItem;
+import example.content.items.BlackHole;
 import example.content.blocks.CollapseMachine;
 import example.content.ModTechTree;
 import example.content.blocks.SubstanceConveyor;
@@ -32,7 +32,7 @@ public class ExampleJavaMod extends Mod{
     @Override
     public void loadContent(){
         Log.info("Loading some example example.content.");
-        ModItem.load();
+        BlackHole.load();
         CollapseMachine.load();
         SubstanceConveyor.load();
 

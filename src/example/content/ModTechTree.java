@@ -1,5 +1,6 @@
 package example.content;
 
+import example.content.items.BlackHole;
 import mindustry.content.Items;
 import mindustry.content.Planets;
 
@@ -12,7 +13,7 @@ import example.content.blocks.SubstanceConveyor;
 public class ModTechTree {
     public static void load(){
         Planets.erekir.techTree = nodeRoot("OldWorld", CollapseMachine.CollapseMachine,() -> {
-            node(ModItem.BlackHole);
+            node(BlackHole.BlackHole);
             node(SubstanceConveyor.SubstanceConveyor);
         });
         if (Items.carbide.unlocked()){

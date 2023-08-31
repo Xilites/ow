@@ -1,6 +1,6 @@
 package example.content.blocks;
 
-import example.content.ModItem;
+import example.content.items.BlackHole;
 import mindustry.content.Fx;
 import mindustry.content.Items;
 
@@ -20,7 +20,7 @@ public class CollapseMachine {
             {
                 requirements(Category.crafting,with(Items.carbide,1));
                 craftEffect = Fx.none;
-                outputItem = new ItemStack(ModItem.BlackHole,1);
+                outputItem = new ItemStack(BlackHole.BlackHole,1);
                 craftTime = 60f * 3f;
                 size = 4;
                 itemCapacity = 120;

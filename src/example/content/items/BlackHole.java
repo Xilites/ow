@@ -1,8 +1,8 @@
-package example.content;
+package example.content.items;
 
 import mindustry.type.Item;
 
-public class ModItem {
+public class BlackHole {
     public static Item BlackHole;
     public static void load(){
         BlackHole = new Item("黑洞"){
