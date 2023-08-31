@@ -15,5 +15,9 @@ public class ModTechTree {
             node(TungstenBlades.TungstenBlades);
             node(TungstenDrillBits.TungstenDrillBits);
         });
+        if (Tungsten.Tungsten.unlocked()){
+            TungstenBlades.TungstenBlades.unlock();
+            TungstenDrillBits.TungstenDrillBits.unlock();
+        }
     }
 }

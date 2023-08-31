@@ -8,9 +8,6 @@ public class TungstenBlades {
         TungstenBlades = new Item("钨制刀片"){
             {
                 hardness = 2;
-                if (Tungsten.Tungsten.unlocked()){
-                    unlock();
-                }
             }
         };
     }

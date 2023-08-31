@@ -8,9 +8,6 @@ public class TungstenDrillBits {
         TungstenDrillBits = new Item("钨制钻头"){
             {
                 hardness = 2;
-                if (Tungsten.Tungsten.unlocked()){
-                    unlock();
-                }
             }
         };
     }
