@@ -16,7 +16,7 @@ import static mindustry.type.ItemStack.with;
 public class CollapseMachine {
     public static Block CollapseMachine;
     public static void load(){
-        CollapseMachine = new GenericCrafter("CollapseMachine"){
+        CollapseMachine = new GenericCrafter("坍缩机"){
             {
                 requirements(Category.crafting,with(Items.carbide,1));
                 craftEffect = Fx.none;
