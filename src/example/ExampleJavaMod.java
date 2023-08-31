@@ -3,9 +3,7 @@ package example;
 import arc.*;
 import arc.util.*;
 import example.content.ModTechTree;
-import example.content.items.Tungsten;
-import example.content.items.TungstenBlades;
-import example.content.items.TungstenDrillBits;
+import example.content.items.*;
 import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
@@ -32,9 +30,11 @@ public class ExampleJavaMod extends Mod{
     @Override
     public void loadContent(){
         Log.info("Loading some example example.content.");
+        Singularity.load();
         Tungsten.load();
         TungstenBlades.load();
         TungstenDrillBits.load();
+        BlackHole.load();
         ModTechTree.load();
     }
 

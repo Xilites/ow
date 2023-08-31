@@ -1,5 +1,6 @@
 package example.content;
 
+import example.content.items.Singularity;
 import example.content.items.Tungsten;
 import example.content.items.TungstenBlades;
 import example.content.items.TungstenDrillBits;
@@ -11,11 +12,13 @@ import static mindustry.content.TechTree.nodeRoot;
 
 public class ModTechTree {
     public static void load(){
-        Planets.erekir.techTree = nodeRoot("OldWorld", Tungsten.Tungsten,() -> {
-            node(TungstenBlades.TungstenBlades);
-            node(TungstenDrillBits.TungstenDrillBits);
+        Planets.erekir.techTree = nodeRoot("OldWorld", Singularity.Singularity,() -> {
+            node(Items.tungsten,() -> {
+                node(TungstenBlades.TungstenBlades);
+                node(TungstenDrillBits.TungstenDrillBits);
+            });
         });
-        if (Tungsten.Tungsten.unlocked()){
+        if (Items.tungsten.unlocked() && Singularity.Singularity.unlocked()){
             TungstenBlades.TungstenBlades.onUnlock();
             TungstenDrillBits.TungstenDrillBits.onUnlock();
         }
