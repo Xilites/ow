@@ -1,5 +1,6 @@
 package example.content.items;
 
+import mindustry.graphics.MultiPacker;
 import mindustry.type.Item;
 
 public class Singularity {
@@ -9,6 +10,7 @@ public class Singularity {
             {
                 hardness = 5;
                 alwaysUnlocked = true;
+                loadIcon();
             }
         };
     }
