@@ -6,7 +6,7 @@ import mindustry.type.Item;
 public class Singularity {
     public static Item Singularity;
     public static void load(){
-        Singularity = new Item("奇点"){
+        Singularity = new Item("Singularity"){
             {
                 hardness = 5;
                 alwaysUnlocked = true;
