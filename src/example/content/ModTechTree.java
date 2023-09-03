@@ -1,5 +1,6 @@
 package example.content;
 
+import example.content.blocks.SubstanceConveyor;
 import example.content.items.Singularity;
 import example.content.items.Tungsten;
 import example.content.items.TungstenBlades;
@@ -16,6 +17,7 @@ public class ModTechTree {
             node(Items.tungsten,() -> {
                 node(TungstenBlades.TungstenBlades);
                 node(TungstenDrillBits.TungstenDrillBits);
+                node(SubstanceConveyor.SubstanceConveyor);
             });
         });
         if (Items.tungsten.unlocked() && Singularity.Singularity.unlocked()){
