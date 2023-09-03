@@ -23,7 +23,7 @@ public class SubstanceConveyor {
                 consumePower(10);
                 alwaysUnlocked = true;
             }
-        }
+        };
     }
 }
 
