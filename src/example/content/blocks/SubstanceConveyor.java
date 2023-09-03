@@ -20,7 +20,7 @@ public class SubstanceConveyor {
                 launchTime = 2;
                 itemCapacity = 20;
                 hasPower = true;
-                consumePower(10);
+                consumePower(20);
                 alwaysUnlocked = true;
             }
         };
