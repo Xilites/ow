@@ -3,6 +3,7 @@ package example;
 import arc.*;
 import arc.util.*;
 import example.content.ModTechTree;
+import example.content.blocks.SubstanceConveyor;
 import example.content.items.*;
 import mindustry.game.EventType.*;
 import mindustry.gen.*;
@@ -35,6 +36,7 @@ public class ExampleJavaMod extends Mod{
         TungstenBlades.load();
         TungstenDrillBits.load();
         BlackHole.load();
+        SubstanceConveyor.load();
         ModTechTree.load();
     }
 
