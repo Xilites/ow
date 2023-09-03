@@ -15,7 +15,7 @@ public class SubstanceConveyor {
     public static void load(){
         SubstanceConveyor = new LaunchPad("物质传送机"){
             {
-                requirements(Category.power, BuildVisibility.campaignOnly, with(BlackHole.BlackHole,1));
+                requirements(Category.effect, BuildVisibility.campaignOnly, with(BlackHole.BlackHole,1));
                 size = 3;
                 launchTime = 2;
                 itemCapacity = 20;
