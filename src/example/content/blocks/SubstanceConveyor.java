@@ -17,7 +17,7 @@ public class SubstanceConveyor {
             {
                 requirements(Category.effect, BuildVisibility.campaignOnly, with(BlackHole.BlackHole,1));
                 size = 3;
-                launchTime = 2;
+                launchTime = 0f;
                 itemCapacity = 20;
                 hasPower = true;
                 consumePower(20);
