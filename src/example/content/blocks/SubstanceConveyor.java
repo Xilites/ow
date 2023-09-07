@@ -8,6 +8,7 @@ import mindustry.world.Block;
 import mindustry.world.blocks.campaign.LaunchPad;
 import mindustry.world.meta.BuildVisibility;
 
+import static mindustry.content.Fx.none;
 import static mindustry.type.ItemStack.with;
 
 public class SubstanceConveyor {
@@ -22,6 +23,9 @@ public class SubstanceConveyor {
                 hasPower = true;
                 consumePower(20);
                 alwaysUnlocked = true;
+                breakEffect = none;
+                destroyEffect = none;
+                placeEffect = none;
             }
         };
     }
